@@ -1,16 +1,16 @@
-package com.Upgenix.step_definitions;
+package step_Definitions;
 
 /*
 In the class we will be able to pass pre- & post- conditions to
  each scenario and each step
  */
 
-import com.Upgenix.utilities.Driver;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import utilities.Driver;
 
 public class Hooks {
 
@@ -39,7 +39,7 @@ public class Hooks {
 
         if (scenario.isFailed()){
 
-            byte [] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
 
         }

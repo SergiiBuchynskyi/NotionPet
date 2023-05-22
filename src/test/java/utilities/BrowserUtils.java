@@ -1,4 +1,4 @@
-package com.Upgenix.utilities;
+package utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;

@@ -1,4 +1,4 @@
-package com.Upgenix.utilities;
+package utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.Properties;
 public class ConfigurationReader {
 
     //1- Create the object of Properties
-    private static Properties properties = new Properties();
+    private static final Properties properties = new Properties();
 
     static{
 
