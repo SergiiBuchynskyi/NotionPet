@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
         },
 
         features ="src/test/resources/features",
-        glue ="Step_Definitions",
+        glue ="step_Definitions",
         dryRun=false,
-        tags = "@SalesFunctionality"
+        tags = "@PET-19"
 )
 public class CukesRunner {
 

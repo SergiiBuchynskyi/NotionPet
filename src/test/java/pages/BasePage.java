@@ -5,11 +5,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class BasePage {
+abstract public class BasePage {
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
 
 
     @FindBy(xpath = "//div[text()='Search']")
@@ -43,5 +44,7 @@ public class BasePage {
     @FindBy(xpath = "//div[text()='Trash']")
     public WebElement trash;
 
+
+   
 
 }
