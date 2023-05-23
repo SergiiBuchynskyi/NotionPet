@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/features",
         glue ="step_Definitions",
         dryRun=false,
-        tags = "@PET-19"
+        tags = "@CreateTask"
 )
 public class CukesRunner {
 
