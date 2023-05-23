@@ -44,7 +44,7 @@ public class CreateTaskSteps {
     public void userShouldSeeAllTheTasksAssigned() {
 
         List<WebElement> listOfTasks = Driver.getDriver().findElements(By.xpath("//div[@class='notion-selectable notion-page-block notion-collection-item']"));
-        System.out.println("quantity of tasks found" + listOfTasks.size());
+        System.out.println("Quantity of tasks found - " + listOfTasks.size());
         if (listOfTasks.size() > 0) {
             Assert.assertTrue(true);
         } else {
