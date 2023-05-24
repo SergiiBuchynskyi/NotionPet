@@ -8,7 +8,7 @@ Feature: As a user, I want to be able to create
 
   @PET-39
   Scenario: Each task should contain title and description
-    When User click New button
+    When User click New button and create task name "Car"
     Then User see title and description is displayed
 
   @PET-19
