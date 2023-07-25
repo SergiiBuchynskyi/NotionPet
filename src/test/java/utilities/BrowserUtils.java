@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 public class BrowserUtils {
@@ -497,6 +498,21 @@ for given duration
     public static void waitForPresenceOfElement(By by, long time) {
         new WebDriverWait(Driver.getDriver(), time).until(ExpectedConditions.presenceOfElementLocated(by));
 
+    }
+
+    /**
+     *  Generates a random integer between 0 (inclusive) and 1000000 (exclusive)
+     *    * Format the random number as a 6-digit string with leading zeros
+    */
+    public static String generateRandomNumber(){
+        Random random = new Random();
+        int randomNumber = random.nextInt(1000000);  // Generates a random integer between 0 (inclusive) and 1000000 (exclusive)
+
+        // Format the random number as a 6-digit string with leading zeros
+        String formattedRandomNumber = String.format("%06d", randomNumber);
+
+        System.out.println("Random Number: " + formattedRandomNumber);
+        return formattedRandomNumber;
     }
 
 
